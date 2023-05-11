@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.img-logo{
+  @apply h-48 w-48
+}
+.list-view-main{
+  @apply grid pt-30 pb-49 gap-x-79  gap-y-79;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+}
+.list-view-item{
+  @apply bg-white rounded-10 relative;
+}
+.action-icon{
+  @apply absolute right-4 top-4 cursor-pointer flex gap-4
+}
+.action-icon img{
+  @apply h-4 cursor-pointer 
+}
+.img-close{
+  @apply h-3 mx-auto
+}
+.close{
+  @apply bg-slate-300 h-8 w-8 rounded-full absolute -right-2 -top-2
+}
+.main-popup{
+  /* @apply relative  */
+}
+.close-modal-main{
+
+}
+.main-popup .ReactModal__Content--after-open{
+  @apply !bg-transparent !border-0 !p-0 !overflow-visible
+}
+.main-popup .step-one-main{
+@apply !p-0
+}
+.inner-list-view{
+  @apply flex gap-x-2;
+}
+body:has(.list-view-main), #main.list-view{
+  @apply bg-gray-100
+}
+#main.list-view{
+  @apply bg-gray-100
+}
+#main.steps{
+  @apply bg-gray-400 grid items-center justify-center;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+body:has(.step-one-main), #main.steps{
+  @apply bg-gray-400 grid items-center justify-center;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+.title{
+  @apply text-24 font-normal text-black leading-8
+}
+.company{
+  @apply text-base leading-6 font-normal
+}
+.location{
+  @apply text-base text-gray-200 leading-6 pb-6 font-normal
+}
+.timining{
+  @apply text-base text-black-100 leading-6 pb-2 font-normal
+}
+.experience{
+  @apply text-base text-black-100 leading-6 font-normal 
+}
+.salary{
+  @apply text-base text-black-100 leading-6 font-normal 
+}
+.emp{
+  @apply text-base text-black-100 leading-6   
+}
+.btn-group-list{
+  @apply flex pt-2 gap-6
+}
+.btn-primary{
+  @apply bg-blue-100 text-white text-base py-2 px-4 rounded-lg font-medium
+}
+.btn-primary-outline{
+  @apply border border-blue-100 text-blue-100 text-base  py-2 px-4 rounded-lg font-medium
+}
+.form-header{
+  @apply flex justify-between pb-6
+}
+.step-one{
+  @apply  bg-white rounded-10 border border-gray-500;
+}
+.form-header .form-header-title{
+  @apply text-xl text-black-200 font-normal 
+}
+.form-header-step{
+  @apply text-base font-medium text-black-200 self-center;
+}
+.form-label{
+  @apply text-sm font-medium pb-1
+}
+.text-error{
+  @apply text-red-100 text-sm font-medium
+}
+.input-form{
+  @apply h-9 border border-gray-500 w-full rounded-5 py-2 px-4 placeholder:text-gray-200 text-sm font-normal
+}
+.form-label{
+  @apply block 
+}
+.input-form:focus, .input-form:hover, .input-form:visited, .input-form:active, .input-form:link{
+  @apply outline-0
+}
+.form-row{
+  @apply gap-x-6 grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+}
+.form-row > div{
+ 
+}
+.form-row-radio{
+  @apply flex gap-4
+}
+.radio-form{
+  @apply flex gap-1 text-gray-200 text-sm
+}
+.input-form-radio{
+  @apply h-20 w-20 self-center
+}
+/*Responsive Css*/
+@media (min-width:600px){
+.step-one{
+    @apply w-577
+  }
+}
